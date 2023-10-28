@@ -1,4 +1,4 @@
-import { updatedCitiesData } from "./DataGenerator";
+
 
 const citiesData = [
     { name: "New York", temperature: 20, airQuality: 25 },
