@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import CityData from './CityData';
+import TopTenHottestCities from './DataGenerator';
 function App() {
   const [cities] = useState(updatedCitiesData); // Assuming you have a function generateRandomCities()
 
@@ -31,7 +32,9 @@ function App() {
         <p>No city found. Please try again.</p>
       )}
       </div>
-      
+       <div className='charts'>
+        <TopTenHottestCities />
+       </div>
     </div>
   );
 }
@@ -40,8 +43,42 @@ const citiesData = [
   { name: "New York", temperature: 20, airQuality: 25 },
   { name: "London", temperature: 18, airQuality: 30 },
   { name: "Tokyo", temperature: 25, airQuality: 20 },
-  // Add more city names with their initial temperature and air quality
-  // ... up to 50 cities
+  { name: "Accra", temperature: 25, airQuality: 20 },
+  { name: "Tema", temperature: 25, airQuality: 20 },
+  { name: "Kumasi", temperature: 25, airQuality: 20 },
+  { name: "Oyibi", temperature: 25, airQuality: 20 },
+  { name: "Texas", temperature: 25, airQuality: 20 },
+  { name: "Ohio", temperature: 25, airQuality: 20 },
+  { name: "Madina", temperature: 25, airQuality: 20 },
+  { name: "Abuja", temperature: 25, airQuality: 20 },
+  { name: "Lome", temperature: 25, airQuality: 20 },
+  { name: "Lagos", temperature: 25, airQuality: 20 },
+  { name: "Abijan", temperature: 25, airQuality: 20 },
+  { name: "Tunis", temperature: 25, airQuality: 20 },
+  { name: "Rabat", temperature: 25, airQuality: 20 },
+  { name: "Kigali", temperature: 25, airQuality: 20 },
+  { name: "Oslo", temperature: 25, airQuality: 20 },
+  { name: "Cape Town", temperature: 25, airQuality: 20 },
+  { name: "Johanesburg", temperature: 25, airQuality: 20 },
+  { name: "Pretoria", temperature: 25, airQuality: 20 },
+  { name: "Ipswich", temperature: 25, airQuality: 20 },
+  { name: "Nagano", temperature: 25, airQuality: 20 },
+  { name: "Ottawa", temperature: 25, airQuality: 20 },
+  { name: "Sunderland", temperature: 25, airQuality: 20 },
+  { name: "Manchester", temperature: 25, airQuality: 20 },
+  { name: "Norwich", temperature: 25, airQuality: 20 },
+  { name: "Beijing", temperature: 25, airQuality: 20 },
+  { name: "Turin", temperature: 25, airQuality: 20 },
+  { name: "Madrid", temperature: 25, airQuality: 20 },
+  { name: "Barcelona", temperature: 25, airQuality: 20 },
+  { name: "Lisbon", temperature: 25, airQuality: 20 },
+  { name: "Dubai", temperature: 25, airQuality: 20 },
+  { name: "Riyahd", temperature: 25, airQuality: 20 },
+  { name: "Rio", temperature: 25, airQuality: 20 },
+  { name: "Milan", temperature: 25, airQuality: 20 },
+  { name: "Port Harcourt", temperature: 25, airQuality: 20 },
+  { name: "Bamako", temperature: 25, airQuality: 20 },
+   
 ];
 
 // Function to generate random temperature and air quality for cities
@@ -58,6 +95,5 @@ const generateRandomCityData = () => {
 const updatedCitiesData = generateRandomCityData();
 
 // Now you can use updatedCitiesData in your React application to display the city information and implement the search functionality to find specific cities.
-
 
 export default App;
