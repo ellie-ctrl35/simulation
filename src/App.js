@@ -19,6 +19,7 @@ function App() {
 
   return (
     <div className='App'>
+      <div className='container'>
       <input className='Input' type="text" value={searchQuery} onChange={handleSearch} placeholder="Search for a city" />
       {searchedCity ? (
         <CityData
@@ -29,6 +30,8 @@ function App() {
       ) : (
         <p>No city found. Please try again.</p>
       )}
+      </div>
+      
     </div>
   );
 }

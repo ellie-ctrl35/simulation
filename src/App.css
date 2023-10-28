@@ -10,5 +10,9 @@
 .Input{
   display: flex;
   flex-direction: column;
-  background: ;
+}
+.container{
+  background: white;
+  width: 40%;
+  height: 60%;
 }
