@@ -1,4 +1,4 @@
-
+import './App.css';
 import React, { useState } from 'react';
 import CityData from './CityData';
 function App() {
