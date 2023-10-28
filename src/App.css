@@ -9,7 +9,11 @@
 }
 .Input{
   display: flex;
-  flex-direction: column;
+  width: 50%;
+  background: transparent;
+  border: 1px solid white;
+  height: 8%;
+  font-weight: bold;
 }
 .container{
   background: rgba(255, 255, 255, 0.2);
@@ -19,4 +23,11 @@ backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
   width: 40%;
   height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text{
+  font-weight: bold;
 }
