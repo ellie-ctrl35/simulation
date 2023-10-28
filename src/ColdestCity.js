@@ -1,5 +1,4 @@
 import React from 'react';
-import citiesData from './Citiesdata';
 import { updatedCitiesData } from './DataGenerator';
 
 

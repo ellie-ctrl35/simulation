@@ -43,7 +43,13 @@ function App() {
       </div>
 
       <div className='bottom-div' >
-        
+        <div className='chart'>
+
+        </div>
+        <div className='chart'>
+
+        </div>
+
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+import { updatedCitiesData } from "./DataGenerator";
+
 const citiesData = [
     { name: "New York", temperature: 20, airQuality: 25 },
     { name: "London", temperature: 18, airQuality: 30 },
@@ -39,4 +41,5 @@ const citiesData = [
     { name: "Bamako", temperature: 25, airQuality: 20 },
      
   ];
+
   export default citiesData;

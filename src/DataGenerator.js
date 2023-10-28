@@ -4,8 +4,8 @@ import citiesData from './Citiesdata';
 const generateRandomCityData = () => {
   const updatedCities = citiesData.map(city => ({
     ...city,
-    temperature: Math.floor(Math.random() * 50 - 10), // Random temperature between -10°C and 40°C
-    airQuality: Math.floor(Math.random() * 300) // Random air quality value up to 300 PM2.5
+    temperature: Math.floor(Math.random() * 50 -10), // Random temperature between -10°C and 40°C
+    airQuality: Math.floor(Math.random() * 150 + 40) // Random air quality value up to 300 PM2.5
   }));
   return updatedCities;
 };
