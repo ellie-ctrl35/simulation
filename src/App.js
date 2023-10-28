@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import CityData from './CityData';
 import TopTenHottestCities from './DataGenerator';
+import TopTenColdestCities from './ColdestCity';
 function App() {
   const [cities] = useState(updatedCitiesData); // Assuming you have a function generateRandomCities()
 
@@ -20,21 +21,30 @@ function App() {
 
   return (
     <div className='App'>
+      <div className='topdiv'>
       <div className='container'>
-      <input className='Input' type="text" value={searchQuery} onChange={handleSearch} placeholder="Search for a city" />
-      {searchedCity ? (
-        <CityData
+         <input className='Input' type="text" value={searchQuery} onChange={handleSearch} placeholder="Search for a city" />
+         {searchedCity ? (
+          <CityData
           city={searchedCity.name}
           temperature={searchedCity.temperature}
           airQuality={searchedCity.airQuality}
         />
-      ) : (
+         ) : (
         <p>No city found. Please try again.</p>
-      )}
+        )}
       </div>
        <div className='charts'>
         <TopTenHottestCities />
        </div>
+       <div className='charts'>
+        <TopTenColdestCities/>
+       </div>
+      </div>
+
+      <div className='bottom-div' >
+        
+      </div>
     </div>
   );
 }
