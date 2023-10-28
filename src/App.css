@@ -31,3 +31,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .text{
   font-weight: bold;
 }
+.cityname{
+  font-size: 2rem;
+  font-weight: bolder;
+}
