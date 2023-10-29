@@ -22,7 +22,7 @@ const citiesData = [
     { name: "Cape Town", temperature: 25, airQuality: 20 },
     { name: "Johanesburg", temperature: 25, airQuality: 20 },
     { name: "Pretoria", temperature: 25, airQuality: 20 },
-    { name: "Ipswich", temperature: 25, airQuality: 20 },
+            { name: "Ipswich", temperature: 25airQuality: 20 },
     { name: "Nagano", temperature: 25, airQuality: 20 },
     { name: "Ottawa", temperature: 25, airQuality: 20 },
     { name: "Sunderland", temperature: 25, airQuality: 20 },
@@ -39,7 +39,7 @@ const citiesData = [
     { name: "Milan", temperature: 25, airQuality: 20 },
     { name: "Port Harcourt", temperature: 25, airQuality: 20 },
     { name: "Bamako", temperature: 25, airQuality: 20 },
-     
+    {name: "Helsinki",temperature:25,airQuality:20}
   ];
 
   export default citiesData;
