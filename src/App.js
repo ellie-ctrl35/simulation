@@ -31,7 +31,7 @@ function App() {
           airQuality={searchedCity.airQuality}
         />
          ) : (
-        <p>No city found. Please try again.</p>
+        <p>No cities found.</p>
         )}
       </div>
        <div className='charts'>
